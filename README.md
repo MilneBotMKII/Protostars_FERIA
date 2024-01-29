@@ -9,4 +9,4 @@ We accomplished this by a grid search method across 4 parameters: Protostellar M
   Disk Outer Radii represents the edge of our model. While this can represent the circumstellar disks outermost edge, it may be the influence of the star on its environment. We sampled from 300-1000 AU, in increments of 100 AU
   Centrifugal Barrier radius represents the turnover point for gas inflow models. Within it, gas follows Keplerian Rotation. Beyond it, gas follows an Infalling Rotating Envelope model. We sampled from 1-1000 AU, in increments of 50 AU
 
-Code is shared between my personal Jupyter Notebooks, and some C files used by FERIA. Small modifications to the C files were made to exclude modeling scenarios outside of Rin <= CB <= Rout generally, or to set CB to Rin or Rout depending on scenario.
+Code is shared between my personal Jupyter Notebooks, and some files used by FERIA. Small modifications to the files were made to exclude modeling scenarios outside of Rin <= CB <= Rout generally, or to set CB to Rin or Rout depending on scenario. Lines 165-167 on the .py files should have the changes I made
